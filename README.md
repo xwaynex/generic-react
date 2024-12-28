@@ -25,7 +25,7 @@ Make sure you have the following installed on your machine:
    cd generic-react
 
 2. Install dependencies:
-```bash
+  ```bash
   npm install
   Or
   yarn install
