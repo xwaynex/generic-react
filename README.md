@@ -31,7 +31,7 @@ Make sure you have the following installed on your machine:
   yarn install
 
 3. Start the development server:
-```bash
+  ```bash
   npm run dev
   Or
   yarn dev
