@@ -30,3 +30,29 @@ Make sure you have the following installed on your machine:
   Or
   yarn install yarn dev
 
+# Directory structure
+src/
+├── assets/                 # Static assets (images, fonts, etc.)
+├── components/             # Reusable components
+│   ├── auth/               # Components for authentication (e.g., LoginForm)
+│   ├── layout/             # Layout components (e.g., Navbar, Footer)
+│   └── ui/                 # Generic UI components (e.g., Button, Modal)
+├── constants/              # Constant values (e.g., texts, API endpoints)
+├── contexts/               # React Contexts for state management
+├── hooks/                  # Custom hooks
+├── pages/                  # Application pages
+│   ├── public/             # Publicly accessible pages
+│   │   ├── Home.jsx
+│   │   └── About.jsx
+│   ├── auth/               # Authentication pages
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   ├── dashboard/          # Private pages (post-authentication)
+│   │   ├── DashboardHome.jsx
+│   │   └── Settings.jsx
+├── services/               # API service functions
+├── styles/                 # Global styles
+├── utils/                  # Utility functions
+├── App.jsx                 # Main application component
+├── index.js                # React entry point
+└── router.jsx              # App routing configuration
