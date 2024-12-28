@@ -24,14 +24,9 @@ Make sure you have the following installed on your machine:
    git clone https://github.com/xwaynex/generic-react.git
    cd generic-react
 
-2. Install dependencies:
+2. Install dependencies and start the development server: Using npm:
   ```bash
-  npm install
+  npm install npm run dev
   Or
-  yarn install
+  yarn install yarn dev
 
-3. Start the development server:
-  ```bash
-  npm run dev
-  Or
-  yarn dev
