@@ -1,10 +1,24 @@
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router";
+import Navbar from "./component/layout/Navbar";
+import Footer from "./component/layout/Footer";
+
 const App = () => {
   return (
-    <>
-      <div className="flex items-center justify-center min-h-screen bg-darkPrimary text-center font-bold text-darkText text-4xl font-poppins">
-        <p>Generic Start template with Vite and Tailwind</p>
-      </div>
-    </>
+    <div className="flex flex-col min-h-screen">
+    <BrowserRouter>
+      {/* Add Navbar */}
+      <Navbar />
+
+      {/* Main Application Routing */}
+      <main className="flex-grow">
+        <Router />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </BrowserRouter>
+  </div>
   );
 };
 

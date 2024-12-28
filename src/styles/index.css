@@ -29,14 +29,10 @@ body {
 
 /* Links */
 a {
-  @apply text-blue-500 hover:text-blue-700 underline;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
-a:focus {
-  @apply outline-none ring-2 ring-blue-300;
-}
 
 /* Headings */
 h1,
@@ -56,9 +52,6 @@ p {
 }
 
 /* Lists */
-ul {
-  @apply list-disc pl-5 text-gray-700;
-}
 
 ol {
   @apply list-decimal pl-5 text-gray-700;
@@ -70,16 +63,16 @@ li {
 
 /* Buttons */
 button {
-  @apply bg-blue-500 text-white font-medium py-2 px-4 rounded shadow-md;
+  @apply bg-black text-white font-medium py-2 px-4 rounded shadow-md;
   transition: all 0.2s ease-in-out;
 }
 
 button:hover {
-  @apply bg-blue-600;
+  @apply bg-black;
 }
 
 button:focus {
-  @apply outline-none ring-2 ring-blue-300;
+  @apply outline-none ring-2 ring-black;
 }
 
 button:disabled {
@@ -90,7 +83,7 @@ button:disabled {
 input,
 textarea,
 select {
-  @apply border border-gray-300 rounded-md px-3 py-2 shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-500;
+  @apply border border-gray-300 rounded-md px-3 py-2 shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-black focus:border-black;
 }
 
 input::placeholder,
@@ -127,6 +120,3 @@ img {
   @apply mx-auto px-4 sm:px-6 lg:px-8;
 }
 
-.hidden {
-  display: none !important;
-}
